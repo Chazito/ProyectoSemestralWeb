@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaosNews - pagina principal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+    <link href="style.css" rel="styleSheet">
+  </head>
+  <body>
+
+    <!--BARRA DE BUSQUEDA-->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CaosNews</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="principal.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  SECCIONES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">CRÓNICA</a></li>
+                  <li><a class="dropdown-item" href="#">ESPECTACULO</a></li>
+                  <li><a class="dropdown-item" href="#">DEPORTES</a></li>
+                  <li><a class="dropdown-item" href="#">POLICIAL</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="Contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="#">PERIODISTAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">Iniciar sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">Registrarse</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search"
+                placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success"
+                type="submit">BUSCAR</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+    <!-- CARRUSEL -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1 class="text-center mt-5 mb-4">Ultimas noticias</h1>
+          <div id="carouselExampleCaptions" class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="noticia1.html"><div class="vignette-overlay"><img
+                      src="stitchCocina.jpg"
+                      class="d-block w-100" alt="..."></div></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Don Stitch en la cocina</h5>
+                  <p>Una noche, Don Stitch decidió explorar la cocina en busca
+                    de aventuras culinarias.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="vignette-overlay"><img src="stitchJardin.jpg"
+                    class="d-block w-100" alt="..."></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Don Stitch en el jardín</h5>
+                  <p>Al día siguiente, Don Stitch se aventuró en el jardín y
+                    descubrió que le encantaba perseguir mariposas.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="vignette-overlay"><img src="stitchSala.png"
+                    class="d-block w-100" alt="..."></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Don Stitch en la sala</h5>
+                  <p>Por la tarde, Don Stitch decidió transformarse en un feroz
+                    león y asustar a los muebles de la sala.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Noticia 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="stitchPizza.jpg" class="card-img-top"
+              alt="Don Stitch comiendo pizza">
+            <div class="card-body">
+              <h5 class="card-title">Don Stitch come pizza y causa caos en la
+                cocina</h5>
+              <p class="card-text">Un Don Stitch doméstico se escapa de su jaula
+                y se da un festín con una pizza recién hecha, dejando un
+                desastre en la cocina.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <!-- Noticia 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="stitchCable.jpg" class="card-img-top"
+              alt="Don Stitch mordiendo cables eléctricos">
+            <div class="card-body">
+              <h5 class="card-title">Don Stitch causa apagón en vecindario tras
+                morder cables eléctricos</h5>
+              <p class="card-text">Un Don Stitch callejero interrumpe el
+                suministro eléctrico en un vecindario luego de morder varios
+                cables en un poste.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <!-- Noticia 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="stitchSalto.jpg" class="card-img-top"
+              alt="Don Stitch saltando desde la ventana">
+            <div class="card-body">
+              <h5 class="card-title">Don Stitch salta desde tercer piso y
+                aterriza sobre un auto en movimiento</h5>
+              <p class="card-text">Un Don Stitch aventurero salta desde un
+                tercer piso y aterriza sorprendentemente sobre el techo de un
+                auto en movimiento, causando asombro y preocupación entre los
+                transeúntes.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>CAOS NEWS - Todos los derechos reservados &copy; 2024</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
