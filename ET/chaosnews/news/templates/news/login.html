@@ -15,7 +15,7 @@
                 align-items: center;
                 height: 100vh;
             }
-            .register-form {
+            .login-form {
                 background-color: #ffffff;
                 border-radius: 10px;
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -29,8 +29,8 @@
             .form-control {
                 border-radius: 5px;
             }
-            .btn-register {
-                background-color: #28a745;
+            .btn-login {
+                background-color: #007bff;
                 border: none;
                 color: white;
                 padding: 10px 20px;
@@ -38,8 +38,8 @@
                 cursor: pointer;
                 transition: background-color 0.3s;
             }
-            .btn-register:hover {
-                background-color: #218838;
+            .btn-login:hover {
+                background-color: #0056b3;
             }
             .form-header {
                 margin-bottom: 20px;
@@ -49,27 +49,18 @@
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <div class="register-form">
-            <h2 class="form-header">Registro</h2>
-            <form method="POST" action="">
-                {% csrf_token %}
+        <div class="login-form">
+            <h2 class="form-header">Login</h2>
+            <form>
                 <div class="form-group">
-                    <label for="username">Nombre de usuario</label>
-                    {{form.username}}
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    {{form.email}}
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
                 </div>
-                <div class="form-group">
-                    <label for="password">Contraseña</label>
-                    {{form.password1}}
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirmar Contraseña</label>
-                    {{form.password2}}
-                </div>
-                <button type="submit" class="btn btn-register btn-block">Register</button>
+                <button type="submit" class="btn btn-login btn-block">Login</button>
             </form>
         </div>
     </body>
