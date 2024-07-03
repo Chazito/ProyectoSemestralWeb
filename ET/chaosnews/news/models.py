@@ -23,4 +23,10 @@ class UserProfile(models.Model):
     username = models.OneToOneField(User, on_delete=models.CASCADE)
     bio = models.TextField(blank=True)
     avatar = models.ImageField(upload_to='avatars/', blank=True, null=True)
-    
+
+
+class Categoria(models.Model):
+    nombre = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.nombre
