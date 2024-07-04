@@ -5,22 +5,18 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 
 # Create your views here.
-def category_post(request, category_slug=None):
-  if category_slug:
-    # Filtrar categorías por slug (si se proporciona)
-    categorias = Categoria.objects.filter(slug=category_slug)
-  else:
-    # Obtener todas las categorías
-    categorias = Categoria.objects.all().order_by('category_title')
-  return render(request, 'news/category_post.html', {'categorias': categorias})
+def category_post(request):
+  categorias = NewsCategory.objects.all().order_by('category_title')
+  context = {'categorias':categorias}
+  return render(request, 'news/category_post.html', context)
 
 
 def registro(request):
     if request.method == 'POST':
         form = CustomUserForm(request.POST)
         if form.is_valid():
-            form.save()
-            profile = UserProfile(username = request.user)
+            user = form.save()
+            profile = UserProfile(username = user)
             profile.save()
             messages.success(request, 'Usuario creado correctamente')
             return redirect('login')
