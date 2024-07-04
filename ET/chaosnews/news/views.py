@@ -14,7 +14,7 @@ def registro(request):
         form = CustomUserForm(request.POST)
         if form.is_valid():
             form.save()
-            profile = UserProfile(username = form.cleaned_data.get('username','ERROR'))
+            profile = UserProfile(username = request.user)
             profile.save()
             messages.success(request, 'Usuario creado correctamente')
             return redirect('login')
@@ -26,11 +26,15 @@ def registro(request):
     context = {'form':form}
     return render(request, 'news/registro.html',context)
 
+def cerrar_sesion(request):
+    logout(request)
+    return redirect('login')
+
 def loginPage(request):
     if request.method == "POST":
         username = request.POST.get('username')
         password = request.POST.get('password')
-        
+        print(username, password)
         user = authenticate(request, username = username, password = password)
         
         if user is not None:

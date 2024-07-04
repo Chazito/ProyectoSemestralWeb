@@ -26,19 +26,25 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page"
-                href="principalinicio.html">Inicio</a>
+                href="{% url 'home'%}">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page"
-                href="Contacto.html">Nosotros</a>
+                href="{% url 'category_post'%}">Foros</a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Iniciar sesión</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registro.html">Registrarse</a>
-            </li>
+            {% if user.is_authenticated %}
+                <p class="nav-item">Bienvenido, {{ user.username }}</p>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'logout' %}">Cerrar sesión</a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'registro' %}">Registrarse</a>
+                </li>
+            {% endif %}
             <!-- Menú de búsqueda -->
             <form class="d-flex my-2 my-lg-0" role="search">
               <input class="form-control me-2" type="search"
@@ -74,7 +80,7 @@
             <h5 class="card-title">Foros Disponibles</h5>
             <div class="list-group">
               {% for categoria in categorias %}
-              <a href="#" class="list-group-item list-group-item-action">{{ categoria.category_title }}</a>
+              <a href="" class="list-group-item list-group-item-action">{{ categoria.category_title }}</a>
               {% endfor %}
             </div>
           </div>
