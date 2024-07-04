@@ -3,7 +3,8 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class NewsCategory(models.Model):
-    category_title = models.CharField(max_length=50, default='Sin Nombre')
+    id_cat = models.AutoField(primary_key=True, db_column='idCategoria')
+    category_title = models.CharField(max_length=50, blank=False, null=False)
 
 class NewsPost(models.Model):
     post_title = models.CharField(max_length=200)

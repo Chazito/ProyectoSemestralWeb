@@ -1,19 +1,21 @@
 from django.shortcuts import render, redirect
 from .forms import CustomUserForm
-from .models import Categoria
+from .models import NewsCategory, UserProfile
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 
 # Create your views here.
 def category_post(request):
-    categorias = Categoria.objects.all()
-    return render(request, 'category_post.html', {'categorias': categorias})
+    categorias = NewsCategory.objects.all().order_by('category_title')
+    return render(request, 'news/category_post.html', {'categorias': categorias})
 
 def registro(request):
     if request.method == 'POST':
         form = CustomUserForm(request.POST)
         if form.is_valid():
             form.save()
+            profile = UserProfile(username = form.cleaned_data.get('username','ERROR'))
+            profile.save()
             messages.success(request, 'Usuario creado correctamente')
             return redirect('login')
         else:
