@@ -5,9 +5,15 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 
 # Create your views here.
-def category_post(request):
-    categorias = NewsCategory.objects.all().order_by('category_title')
-    return render(request, 'news/category_post.html', {'categorias': categorias})
+def category_post(request, category_slug=None):
+  if category_slug:
+    # Filtrar categorías por slug (si se proporciona)
+    categorias = Categoria.objects.filter(slug=category_slug)
+  else:
+    # Obtener todas las categorías
+    categorias = Categoria.objects.all().order_by('category_title')
+  return render(request, 'news/category_post.html', {'categorias': categorias})
+
 
 def registro(request):
     if request.method == 'POST':

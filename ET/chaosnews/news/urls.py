@@ -17,4 +17,5 @@ urlpatterns = [
     path('shop',views.shop, name= 'shop'),
     path('membership',views.membership, name= 'membership'),
     path('foros/', views.category_post, name='category_post'),
+    path('finanzas/', views.category_post, name='finanzas_category'),
 ]
