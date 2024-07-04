@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="377BC652-50DA-7AA5-0A5E-C4AF46B17E47" containerWithKeyObject="EA87E20C-7B0B-E3E0-38B2-09CA53D5509F" localFKIndex="32FDBA52-CA5C-14FA-8C35-4B2E5BE8E021" name="CATEGORIAS_POST_FK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>D8B94398-7A02-6B4B-9D7F-692E2C096BA2</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<referredTableLongName>POST</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BA9C0A7B-9A3B-EF08-5D58-C785C6FF3433</referredTableID>
+<keyObject>1DBDDFE5-F8F9-3BEC-A9C8-FC27711AC53D</keyObject>
+<referredKeyID>1DBDDFE5-F8F9-3BEC-A9C8-FC27711AC53D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_POST</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

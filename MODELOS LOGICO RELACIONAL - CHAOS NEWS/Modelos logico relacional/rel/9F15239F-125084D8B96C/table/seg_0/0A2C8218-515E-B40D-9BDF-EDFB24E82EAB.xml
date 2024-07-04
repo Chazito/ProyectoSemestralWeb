@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A2C8218-515E-B40D-9BDF-EDFB24E82EAB" name="COMENTARIO">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>7BFB5062-DB0F-3908-728B-6689DC89D5A3</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COMMENT" id="E00C3267-8B84-05AC-7BCA-D489612C1888">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>37DD88BD-9DB2-091E-18E4-853FFF88460F</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE" id="62DE6FF8-423B-A609-D99F-1CCB7477B69D">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>B1F32A47-7562-E749-3E80-3F5797EA7CE3</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_USER" id="470DC040-3C6E-E0D5-9D38-2C12DE2BF05D">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>7C7A23B1-2810-0D76-C9A4-B1C3B7D0A802</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB2E559D-F12E-1E7C-4687-A741ADB234D2" referredColumn="5373585B-FE83-4B0E-9BA0-704EBFC79F77"/>
+</associations>
+</Column>
+<Column name="ID_POST" id="FE0E3ECC-55FA-B9F7-36F8-78FCC43B957E">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>A8184B36-6C9C-6293-C3EC-E8A8694F5D94</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="91D76A46-ED66-7B6D-4672-05EE2670B7C1" referredColumn="54700CE8-9FAF-18CA-74EE-F6342B16293C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D382FF1-9835-232D-5143-0FCBEA7A4944" name="COMENTARIO_USER_FK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>1112AE58-2E27-12E9-0A8E-511ABA965DC1</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="470DC040-3C6E-E0D5-9D38-2C12DE2BF05D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36B60E30-6840-2AA6-183D-9724438F973F" name="COMENTARIO_POST_FK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>DBA47F9F-433E-478D-D67C-C1CFD82F3515</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE0E3ECC-55FA-B9F7-36F8-78FCC43B957E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

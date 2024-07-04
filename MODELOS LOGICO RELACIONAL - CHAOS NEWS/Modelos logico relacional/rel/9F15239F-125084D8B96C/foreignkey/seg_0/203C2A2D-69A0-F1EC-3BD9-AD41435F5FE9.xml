@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="203C2A2D-69A0-F1EC-3BD9-AD41435F5FE9" containerWithKeyObject="0842A187-CF24-DB7E-6C15-BD11F17E3C41" localFKIndex="59D87FF7-F565-ACF8-9704-A1C8A47AC1DB" name="MONEDA_ITEM_CARRITO_FK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>043B0C79-34BB-102F-EAE1-F53779EF9799</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<referredTableLongName>ITEM_CARRITO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>55CBB9DB-A671-A54D-D3FE-2502C3E33C7E</referredTableID>
+<keyObject>1DCE4359-86B3-7991-0EFA-D992AF0A1F2E</keyObject>
+<referredKeyID>1DCE4359-86B3-7991-0EFA-D992AF0A1F2E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ITEM_CARRITO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
