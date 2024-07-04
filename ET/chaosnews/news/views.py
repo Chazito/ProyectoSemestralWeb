@@ -1,18 +1,14 @@
 from django.shortcuts import render, redirect
 from .forms import CustomUserForm
-<<<<<<< HEAD
 from .models import Categoria
-=======
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
->>>>>>> 747fa1c40d58f328c5b0f4c71970312106e7bab8
 
 # Create your views here.
-<<<<<<< HEAD
 def category_post(request):
     categorias = Categoria.objects.all()
     return render(request, 'category_post.html', {'categorias': categorias})
-=======
+
 def registro(request):
     if request.method == 'POST':
         form = CustomUserForm(request.POST)
@@ -82,4 +78,3 @@ def shopping_cart(request):
 def create_post(request):
     context = {}
     return render(request, 'news/create_post.html', context)
->>>>>>> 747fa1c40d58f328c5b0f4c71970312106e7bab8
