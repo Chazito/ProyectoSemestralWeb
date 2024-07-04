@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="14146773-2346-3645-E008-DC4A15A84161" name="ITEM_CARRITO">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 13:14:46 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<engineerTo>
+<item key="9F15239F-35CD-12E2-3A4F-125084D8B96C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PRODUCTO" id="9A1C3393-94E3-CDC1-165B-08D1A96FF249">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 13:16:48 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<engineerTo>
+<item key="9F15239F-35CD-12E2-3A4F-125084D8B96C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CANTIDAD" id="CDDA7346-64DF-CA60-22BD-32099374613A">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 13:16:48 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<engineerTo>
+<item key="9F15239F-35CD-12E2-3A4F-125084D8B96C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

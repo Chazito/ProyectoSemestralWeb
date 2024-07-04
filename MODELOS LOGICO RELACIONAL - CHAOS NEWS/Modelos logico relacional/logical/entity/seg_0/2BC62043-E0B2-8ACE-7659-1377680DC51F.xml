@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2BC62043-E0B2-8ACE-7659-1377680DC51F" name="USER_PROFILE">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 13:11:40 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<engineerTo>
+<item key="9F15239F-35CD-12E2-3A4F-125084D8B96C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="USERNAME" id="3AA4029A-215F-DF1D-2572-F6F40A7FBE7E">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 13:11:52 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<engineerTo>
+<item key="9F15239F-35CD-12E2-3A4F-125084D8B96C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="2D3422D2-E969-D39E-175F-7C71126B98D0">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 13:11:52 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<engineerTo>
+<item key="9F15239F-35CD-12E2-3A4F-125084D8B96C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PHONE_NUMBER" id="C6D58F97-2585-2157-6B83-4C5AFEB289F0">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 13:11:52 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<engineerTo>
+<item key="9F15239F-35CD-12E2-3A4F-125084D8B96C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BIO" id="8500C6D4-150F-D64E-9A07-C0BB2A659E7A">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 13:42:08 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<engineerTo>
+<item key="9F15239F-35CD-12E2-3A4F-125084D8B96C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_USER" id="0525981C-7FCD-BFB7-DE17-611DDCBAC777">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 13:44:42 UTC</createdTime>
+<generatorID>B018E470-BA66-8D3E-8A1A-911315499631</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<engineerTo>
+<item key="9F15239F-35CD-12E2-3A4F-125084D8B96C" value="true"/>
+</engineerTo>
+<referedAttribute>2A61ACB9-AB51-809F-F0AA-148A830E1AFA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

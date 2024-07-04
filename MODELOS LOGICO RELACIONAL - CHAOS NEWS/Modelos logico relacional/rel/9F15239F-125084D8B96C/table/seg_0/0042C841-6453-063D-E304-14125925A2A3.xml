@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0042C841-6453-063D-E304-14125925A2A3" name="USER_PROFILE">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>2BC62043-E0B2-8ACE-7659-1377680DC51F</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USERNAME" id="458A4AAA-A895-76F4-6BD4-F52A61B375BD">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>3AA4029A-215F-DF1D-2572-F6F40A7FBE7E</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="35393746-7C75-934D-70CC-94FB1EC0FCB3">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>2D3422D2-E969-D39E-175F-7C71126B98D0</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="47D2C9B5-A7A1-4478-0413-9459B2237B1C">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>C6D58F97-2585-2157-6B83-4C5AFEB289F0</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIO" id="BA9FA21A-FDC0-2EB4-7DBF-4557233EFD64">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>8500C6D4-150F-D64E-9A07-C0BB2A659E7A</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_USER" id="E75F0D70-7AE8-CD4E-8EE0-C1A11196C4E2">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>0525981C-7FCD-BFB7-DE17-611DDCBAC777</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FBA23FE2-AB94-E305-3A8D-A1948E792550" referredColumn="5373585B-FE83-4B0E-9BA0-704EBFC79F77"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C46094BE-2FFF-47A1-B49F-49B293108025" name="USER_PROFILE_USER_FK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>B018E470-BA66-8D3E-8A1A-911315499631</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E75F0D70-7AE8-CD4E-8EE0-C1A11196C4E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

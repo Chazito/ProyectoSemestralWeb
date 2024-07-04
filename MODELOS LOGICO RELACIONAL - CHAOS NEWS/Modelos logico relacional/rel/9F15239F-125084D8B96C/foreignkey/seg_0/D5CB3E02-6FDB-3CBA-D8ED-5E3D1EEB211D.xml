@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D5CB3E02-6FDB-3CBA-D8ED-5E3D1EEB211D" containerWithKeyObject="55CBB9DB-A671-A54D-D3FE-2502C3E33C7E" localFKIndex="EC0A5358-3973-729E-4BFE-FAB6546581DB" name="ITEM_CARRITO_CARRITO_FK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>499A1B7D-D5B5-4FBB-8CD3-747110849270</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<referredTableLongName>CARRITO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>75D70EA1-2A38-ABF7-540D-779E67B9497A</referredTableID>
+<keyObject>1B430C3B-E4EE-6E32-A3F7-B9E4180EFE9B</keyObject>
+<referredKeyID>1B430C3B-E4EE-6E32-A3F7-B9E4180EFE9B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CARRITO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

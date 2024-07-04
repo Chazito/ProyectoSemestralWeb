@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7EE0E53F-4C88-687F-A16E-0A30DC798B70" name="USER">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>3CE46520-71A5-0D4A-CFDC-694BC66F8752</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USER" id="5373585B-FE83-4B0E-9BA0-704EBFC79F77">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>2A61ACB9-AB51-809F-F0AA-148A830E1AFA</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B11842E8-6BE3-C173-606D-9BDDB7089FD8" name="USER_PK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>1CF5782D-3A12-A69A-4A4E-7B226C0AAA58</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5373585B-FE83-4B0E-9BA0-704EBFC79F77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

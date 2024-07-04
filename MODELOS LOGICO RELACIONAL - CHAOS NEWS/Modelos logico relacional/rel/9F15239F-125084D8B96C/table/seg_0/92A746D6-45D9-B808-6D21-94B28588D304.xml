@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92A746D6-45D9-B808-6D21-94B28588D304" name="AUTORIA">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<ordsAlias>relation_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID_USER" id="E0EC42E7-6BE9-FCF7-7224-4870CCCFC601">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2FFA668-A52A-BCB7-89CA-54F9A08D75DA" referredColumn="5373585B-FE83-4B0E-9BA0-704EBFC79F77"/>
+</associations>
+</Column>
+<Column name="POST_ID_POST" id="8DBFB7ED-B6FE-9CD0-AD1B-3A126229A18B">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B775B726-1693-1A5F-E430-5484DF93BB27" referredColumn="54700CE8-9FAF-18CA-74EE-F6342B16293C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="90016404-96AF-2AE2-FCDD-F2B3382A8E42" name="AUTORIA">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0EC42E7-6BE9-FCF7-7224-4870CCCFC601"/>
+<colUsage columnID="8DBFB7ED-B6FE-9CD0-AD1B-3A126229A18B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEBEE3E8-428C-55F6-98F9-8A85DF0357AC" name="Relation_9_USER_FK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>5EEF6D17-32FF-6F72-C724-68AC03138DBF</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0EC42E7-6BE9-FCF7-7224-4870CCCFC601"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B368A1B-7CB6-7EF0-56C3-2A05F03D9917" name="Relation_9_POST_FK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>5EEF6D17-32FF-6F72-C724-68AC03138DBF</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DBFB7ED-B6FE-9CD0-AD1B-3A126229A18B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

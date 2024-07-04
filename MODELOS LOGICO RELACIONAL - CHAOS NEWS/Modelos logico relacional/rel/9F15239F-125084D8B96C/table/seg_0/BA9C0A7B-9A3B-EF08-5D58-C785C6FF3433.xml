@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA9C0A7B-9A3B-EF08-5D58-C785C6FF3433" name="POST">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>70683652-77B9-BFD2-54E3-E3E93FF164E4</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_POST" id="54700CE8-9FAF-18CA-74EE-F6342B16293C">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>D3B44F2A-46F3-B769-28E8-648B33B0D376</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE_POST" id="F9D5B194-BE97-E725-CC88-DD852B7A339C">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>82055EF2-9C5A-2CFB-4ACA-C5F5A6BB5CFB</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HISTORY_POST" id="FB28BF64-83A0-8406-1411-1C810612992C">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>FCD5736B-6879-89C3-77D1-8399CD63AF71</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_POST" id="A6191BF6-0F6C-AF3D-76AB-7F1E8E312CCF">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>8E71A3B9-CF18-1BE0-4DB7-D80DC85E6EB8</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1DBDDFE5-F8F9-3BEC-A9C8-FC27711AC53D" name="POST_PK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>24630C41-238F-4854-BD3D-D54B1CC4BF3F</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54700CE8-9FAF-18CA-74EE-F6342B16293C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA87E20C-7B0B-E3E0-38B2-09CA53D5509F" name="CATEGORIAS">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>3985AE56-2489-6184-3396-A9BE88AC7F2D</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CATEGORY" id="33BA4684-C1F9-16B4-875E-AED5EB58629A">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>FD0CF3A5-B40D-5EBD-F44E-EA1341E2AE03</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE_CATEGORY" id="B19EC996-B854-37BC-CD23-C3CF6AE35795">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>5EE89751-2452-B5B8-5BFC-0D18D2B2F025</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_POST" id="43F587E7-1773-5C25-BAF4-92E418D0F83C">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>1187B4F1-F597-2E7D-9B34-B9E791621C02</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="377BC652-50DA-7AA5-0A5E-C4AF46B17E47" referredColumn="54700CE8-9FAF-18CA-74EE-F6342B16293C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A15312A7-8938-53AC-553B-31F80D982475" name="CATEGORIAS_PK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>C7EF4E06-EC2A-3090-1B48-20E561E49BBE</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33BA4684-C1F9-16B4-875E-AED5EB58629A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32FDBA52-CA5C-14FA-8C35-4B2E5BE8E021" name="CATEGORIAS_POST_FK">
+<createdBy>diego</createdBy>
+<createdTime>2024-07-04 17:27:41 UTC</createdTime>
+<generatorID>D8B94398-7A02-6B4B-9D7F-692E2C096BA2</generatorID>
+<ownerDesignName>Modelos logico relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43F587E7-1773-5C25-BAF4-92E418D0F83C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
