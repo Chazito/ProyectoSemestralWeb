@@ -1,12 +1,64 @@
 {% extends 'news/new_post.html' %}
 {% load static %}
+{% block head_override %}
+<style>
+  .post-form {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20vh;
+  }
+  .form-group {
+      margin-bottom: 15px;
+  }
+  .form-control {
+      border-radius: 5px;
+  }
+  .btn-register {
+      background-color: #28a745;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  .btn-register:hover {
+      background-color: #218838;
+  }
+  .form-header {
+      margin-bottom: 20px;
+      text-align: center;
+  }
+</style>
+{%endblock%}
 {% block content %}
-  <h2>Create a new post</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Submit</button>
-  </form>
+<div class="container post-form">
+            <h2 class="form-header">Crear Post</h2>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="post_title">Titulo del post</label>
+                    {{form.post_title}}
+                </div>
+                <div class="form-group">
+                    <label for="post_story">Descripcion</label>
+                    {{form.post_story}}
+                </div>
+                <div class="form-group">
+                    <label for="post_category">Categoria</label>
+                    {{form.post_category}}
+                </div>
 
-  <p><a href="{% url 'post_list' %}">View all posts</a></p>
+                <div>
+                    {% for message in messages %}
+                        <p id="messages">{{message}}</p>
+                    {% endfor%}
+                </div>
+                <button type="submit" class="btn btn-register btn-block">Publicar</button>
+            </form>
+        </div>
 {% endblock %}

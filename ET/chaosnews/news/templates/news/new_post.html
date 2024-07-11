@@ -1,103 +1,14 @@
+{% extends "news/core.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Realizar Publicación</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Estilos CSS personalizados -->
-  <link rel="stylesheet" href="/static/styles.css">
-</head>
-<body>
 
-   <!-- Navbar -->
-   <div class="container">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Chaos News</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page"
-                href="{% url 'home'%}">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page"
-                href="{% url 'category_post'%}">Foros</a>
-            </li>
-            {% if user.is_authenticated %}
-                <p>Welcome, {{ user.username }}</p>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'logout' %}">Cerrar sesión</a>
-                </li>
-            {% else %}
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'registro' %}">Registrarse</a>
-                </li>
-            {% endif %}
-            <!-- Menú de búsqueda -->
-            <form class="d-flex my-2 my-lg-0" role="search">
-              <input class="form-control me-2" type="search"
-                placeholder="Buscar en Chaos Foro..." aria-label="Search">
-              <button class="btn btn-outline-success "
-                type="submit">BUSCAR</button>
-            </form>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+{% block title %}Crear Post{% endblock %}
 
-  <br><br>
+{% block content%}
 
-  <div class="container mt-8">
-    <div class="row">
-      <div class="col-md-3">
-        <!-- Carta de perfil -->
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">FanStitch6937</h5>
-            <p class="card-text">Este es un perfil de usuario de ejemplo.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <!-- Detalles de perfil -->
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Información del Perfil</h5>
-            <p class="card-text">Nombre: <span class="font-weight-bold">John Doe</span></p>
-            <p class="card-text">Email: <span class="font-weight-bold">johndoe@example.com</span></p>
-            <p class="card-text">Ubicación: <span class="font-weight-bold">Ciudad, País</span></p>
-            <a href="#" class="btn btn-primary">Editar Perfil</a>
-          </div>
-        </div>
-      </div>
-      {% block content %}
+  {% block main_content %}
       
-      {% endblock %}
-      
-
-    </div>
-  </div>
-
-
-  {% block content %}
-
   {% endblock %}
+
   <!-- Ventana modal de éxito -->
   <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -133,6 +44,4 @@
       });
     });
   </script>
-
-</body>
-</html>
+{%endblock%}

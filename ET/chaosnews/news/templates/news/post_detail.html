@@ -1,9 +1,57 @@
-{% extends 'news/core.html' %}
+{% extends "news/core.html" %}
+{% load static %}
+
+{% block title %}{{post.post_title}}{% endblock %}
+
+{% block head_override%}
+<style>
+  .container {
+      width: 80vw; /* Adjust width as needed */
+      margin: 20px auto; /* Center the container and add margin */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Optional shadow */
+  }
+  .post {
+      margin-bottom: 20px; /* Space between posts */
+      padding: 15px;
+      background-color: #555; /* Post background color */
+      border-radius: 8px;
+  }
+  .post-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  .post-description {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+  }
+  .post-category {
+      font-style: italic;
+      color: #ccc; /* Lighter text color for category */
+  }
+</style>
+{%endblock%}
 
 {% block content %}
-  <h2>{{ post.post_title }}</h2>
-  <p>{{ post.post_story }}</p>
-  <p>Author: {{ post.post_author }}</p>
-  <p>Category: {{ post.post_category.category_title }}</p>
-  <p>Date: {{ post.post_date }}</p>
+<div class="container">
+  <div class="post">
+      {%if request.user == post.post_author or request.user.is_superuser %}
+      <div class="post-buttons">
+          <a href="{% url 'edit_post' post.pk %}" class="btn-edit">Edit</a>
+          <a href="{% url 'delete_post' post.pk %}" class="btn-delete">Delete</a>
+      </div>
+      {%endif%}
+      <div class="post-title">{{post.post_title}}</div>
+      <div class="post-description">
+          <p>{{post.post_author}}</p>
+      </div>
+      <div class="post-description">
+          <p>{{post.post_story}}</p>
+      </div>
+      <div class="post-category">Categoria: {{post.post_category.category_title}}</div>
+  </div>
+</div>
 {% endblock %}
