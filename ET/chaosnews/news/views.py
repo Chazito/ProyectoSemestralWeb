@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect
-from .forms import CustomUserForm
-from .models import NewsCategory, UserProfile
+from django.shortcuts import get_object_or_404, render, redirect
+from .forms import CustomUserForm, NewsPostForm
+from .models import NewsCategory, UserProfile, NewsPost
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 
@@ -83,6 +83,33 @@ def shopping_cart(request):
     context = {}
     return render(request, 'news/cart.html', context)
 
+# Hay que hacer que esté logeado para crear post? 
 def create_post(request):
-    context = {}
-    return render(request, 'news/create_post.html', context)
+    if request.method == 'POST':
+        form = NewsPostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.post_author = request.user
+            post.save()
+            return redirect('post_detail', pk=post.pk)  # Redirige a la vista de detalle del post
+    else:
+        form = NewsPostForm()
+    return render(request, 'news/create_post.html', {'form': form})
+
+def post_detail(request, pk):
+    post = get_object_or_404(NewsPost, pk=pk)
+    return render(request, 'news/post_detail.html', {'post': post})
+
+def post_list(request):
+    user_posts = NewsPost.objects.filter(post_author=request.user)
+    return render(request, 'news/post_list.html', {'user_posts': user_posts})
+
+def category_posts(request, category_id):
+    category = get_object_or_404(NewsCategory, id_cat=category_id)
+    posts = NewsPost.objects.filter(post_category=category)
+    return render(request, 'news/category_posts.html', {'category': category, 'posts': posts})
+
+def user_posts(request, user_id):
+    user = get_object_or_404(UserProfile, id=user_id)
+    posts = NewsPost.objects.filter(post_author=user)
+    return render(request, 'news/user_posts.html', {'user': user, 'posts': posts})

@@ -9,8 +9,9 @@ class NewsCategory(models.Model):
 class NewsPost(models.Model):
     post_title = models.CharField(max_length=200)
     post_author = models.ForeignKey(User, on_delete=models.CASCADE)
-    post_story = models.CharField(max_length=2000)
+    post_story = models.TextField()
     post_date = models.DateTimeField(auto_now_add=True)
+    post_category = models.ForeignKey(NewsCategory, on_delete=models.CASCADE, related_name='posts', default=1)
 
 class PostComment(models.Model):
     username = models.ForeignKey(User, on_delete=models.CASCADE)

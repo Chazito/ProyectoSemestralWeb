@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaosForo - Noticia: Temperaturas Bajo Cero en Santiago</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Chaos News</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{% url 'home'%}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{% url 'category_post'%}">Foros</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                            <p>Welcome, {{ user.username }}</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'logout' %}">Cerrar sesión</a>
+                            </li>
+                        {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'registro' %}">Registrarse</a>
+                            </li>
+                        {% endif %}
+                        <form class="d-flex my-2 my-lg-0" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar en Chaos Foro..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Contenido de la Noticia -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="mb-4">Temperaturas Bajo Cero en Santiago: Previsión para Esta Semana</h1>
+                <img src="{% static 'images/climafrio.jpg' %}" class="img-fluid mb-4" alt="Clima frío en Santiago">
+                <p class="lead">Los santiaguinos están preparándose para enfrentar una semana de temperaturas extremadamente frías, según los pronósticos meteorológicos más recientes. Se espera que las mínimas desciendan hasta -5°C en algunas zonas de la ciudad, especialmente durante las horas de la madrugada y la mañana.</p>
+                <p>La Dirección Meteorológica de Chile ha emitido una alerta por bajas temperaturas, instando a la población a tomar precauciones adicionales. Se recomienda a los ciudadanos abrigarse adecuadamente, evitar salir durante las horas más frías del día, y proteger las tuberías y sistemas de agua contra posibles congelamientos.</p>
+                <h2>Impacto en la Ciudad</h2>
+                <p>Este episodio de frío extremo podría tener repercusiones en diversos sectores, incluyendo la agricultura, el transporte y la salud pública. Los agricultores están preocupados por posibles daños a los cultivos sensibles al frío, mientras que las autoridades de transporte están implementando medidas para garantizar la seguridad en las carreteras y calles de la capital.</p>
+                <h2>Consejos para los Residentes</h2>
+                <ul>
+                    <li>Usar ropa de abrigo, incluyendo gorros, guantes y bufandas.</li>
+                    <li>Evitar el uso excesivo de calefacción para prevenir accidentes.</li>
+                    <li>Revisar sistemas de calefacción y aislamiento en hogares y edificaciones.</li>
+                    <li>Consultar regularmente los pronósticos del tiempo y mantenerse informado.</li>
+                </ul>
+                <p>Se espera que las temperaturas comiencen a moderarse hacia el fin de semana, aunque se recomienda a la población estar atenta a posibles actualizaciones meteorológicas y seguir las indicaciones de las autoridades locales.</p>
+                <a href="#" class="btn btn-primary mt-3">Regresar a la página principal</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>Kaos Foro - Todos los derechos reservados &copy; 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

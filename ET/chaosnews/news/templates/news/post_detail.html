@@ -1,0 +1,9 @@
+{% extends 'news/core.html' %}
+
+{% block content %}
+  <h2>{{ post.post_title }}</h2>
+  <p>{{ post.post_story }}</p>
+  <p>Author: {{ post.post_author }}</p>
+  <p>Category: {{ post.post_category.category_title }}</p>
+  <p>Date: {{ post.post_date }}</p>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'news/new_post.html' %}
+{% load static %}
+{% block content %}
+  <h2>Create a new post</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+
+  <p><a href="{% url 'post_list' %}">View all posts</a></p>
+{% endblock %}
